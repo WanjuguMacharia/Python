@@ -1,3 +1,5 @@
+import os
+
 file = open("myFile.txt", "w")
 file.write('It is a beautiful day')
 file.close()
@@ -16,3 +18,6 @@ try:
     print(file.data())
 except AttributeError:
     print('Error')
+
+
+os.remove('anotherFile.txt')
